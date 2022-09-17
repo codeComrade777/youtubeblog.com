@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    /* #ff0000 */
+}
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 5%;
+    height: 7vh;
+    background-color: #000;
+}
+.header .logo a{
+    font-size: 2.5rem;
+    color:  #ff0000;
+    font-weight: bold;
+}
+.header .logo a span{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+.header .navbar ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 7px 14px;
+}
+.header .navbar .active{
+    background-color: #ff0000;
+    border-radius: .5rem;
+}
+.header .navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+.header .credit button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 7px 14px;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 0.5rem;
+    background-color: #ff0000;
+}
+#show-btn{
+color: #fff;
+font-size: 2rem;
+background-color: #ff0000;
+padding: 5px 10px;
+display: none;
+}
+#close-btn{
+color: #fff;
+font-size: 2rem;
+background-color: #ff0000;
+padding: 5px 10px;
+display: none;
+}
+#user-btn{
+    color: #fff;
+    font-size: 2rem;
+    background-color: #ff0000;
+    padding: 5px 10px;
+    display: none;
+    }
+section{
+    padding: 2rem 5%;
+}
+.home-container{
+    margin-top: 30px;
+}
+.home-container .inside-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+}
+.home-container .inside-home .home-heading h1
+{
+    font-size: 5rem;
+}
+.home-container .inside-home .home-heading p{
+    font-size: 1.5rem;
+}
+.home-container .inside-home .home-heading h1 span{
+    color: #ff0000;
+    font-weight: bold;
+}
+.home-container .inside-home .home-heading .btns{
+    margin-top: 20px;
+}
+.home-container .inside-home .home-heading .btns .main {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.home-container .inside-home .home-heading .btns a{
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 20px;
+    background-color: rgb(190, 189, 189);
+    padding: 10px 20px;
+}
+.home-container .inside-home .img-home img{
+    height: 50vh;
+    clip-path: polygon(100% 0, 100% 38%, 100% 99%, 17% 74%, 0 0);
+}
+.courses-container h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.courses-container .inside-courses{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.courses-container .inside-courses .courses-box{
+    margin: 20px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 40px;
+    height:500px;
+    width:100%;
+}
+.courses-container .inside-courses .courses-box .courses-heading{
+    /* background-color: blue; */
+    padding: 30px;
+}
+.courses-container .inside-courses .courses-box .courses-heading p{
+    color:rgb(190, 189, 189);
+    font-size: 1.3rem;
+}
+.courses-container .inside-courses .courses-box .courses-heading h2{
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+.courses-container .inside-courses .courses-box .courses-heading h6{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.courses-container .inside-courses .courses-box .courses-heading .start-btn{
+    margin-top: 50px;
+}
+.courses-container .inside-courses .courses-box .courses-heading .start-btn a{
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+.explore-more{
+    text-align: center;
+}
+.explore-more a{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.courses-container .inside-courses .courses-box img{
+    height: 45%;
+    border-radius: .5rem;
+    width: 100%;
+
+}
+@media(max-width:768px){
+    #login-Btn,
+    #signup-Btn{
+        display: none;
+    }
+    #close-btn{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 3%;
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+    #show-btn{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        font-size: 2.5rem;
+    }
+    #user-btn{
+        display: block;
+        margin-right: 40px;
+        cursor: pointer;
+        position: relative;
+        right: 3%;
+        font-size: 2.5rem;
+    }
+    html{
+        font-size: 55%;
+    }
+    .header .navbar{
+        top: -100%;
+        left: 29%;
+        position: absolute;
+        height: 55vh;
+        width: 70%;
+        right: -10%;
+        margin-top: 70px;
+        flex-direction: column;
+        background-color: #000000;
+        transition:  0.5s right;
+    }
+    .header .navbar ul{
+        margin-top: 75px;
+        display: block;
+    }
+    .header .navbar a{
+        display: block;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .header .navbar.active{
+        top: 0%;
+    }
+    .home-container .inside-home{
+        flex-direction: column;
+    }
+    .home-container .inside-home .img-home img{
+        height: 40vh;
+        margin-top: 40px;
+        clip-path: polygon(100% 0, 100% 38%, 100% 99%, 17% 74%, 0 0);
+    }
+    .courses-container .inside-courses{
+        flex-direction: column;
+    }
+    .courses-container .inside-courses .courses-box .courses-heading{
+        /* background-color: blue; */
+        padding: 10px;
+    }
+}
