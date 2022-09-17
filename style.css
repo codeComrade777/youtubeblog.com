@@ -10,6 +10,7 @@
     /* #006295 */
 }
 html{
+    scroll-behavior: smooth;
     font-size: 65.5%;
     overflow-x: hidden;
 }
@@ -188,7 +189,30 @@ section{
     height: 45%;
     border-radius: .5rem;
     width: 100%;
-
+}
+.footer-container{
+    border-top: 1px solid rgb(190, 189, 189);
+}
+.footer-container .inside-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 2rem 5%;
+}
+.footer-container .inside-footer .logo a{
+    font-size: 2rem;
+    color: #000;
+}
+.footer-container .inside-footer .menus a{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #000;
+}
+.footer-container .inside-footer .socials i{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
 }
 @media(max-width:768px){
     #login-Btn,
@@ -224,7 +248,7 @@ section{
     .header .navbar{
         top: -100%;
         left: 29%;
-        position: absolute;
+        position: fixed;
         height: 55vh;
         width: 70%;
         right: -10%;
@@ -263,6 +287,15 @@ section{
         /* background-color: blue; */
         padding: 10px;
     }
+    .footer-container{
+       position: relative;
+        bottom: 0%;
+        margin-top: 900px;
+    }
+    .footer-container .inside-footer{
+        flex-direction: column;
+        line-height: 2;
+    }
 }
 @media(max-width:350px)
 {
@@ -272,5 +305,14 @@ section{
     .home-container .inside-home .img-home img{
         height: 30vh;
        
+    }
+}
+@media(max-width:319px)
+{
+    html{
+        font-size: 45%;
+    }
+    .home-container .inside-home .img-home img{
+        height: 20vh;
     }
 }
